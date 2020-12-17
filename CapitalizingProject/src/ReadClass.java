@@ -8,7 +8,7 @@ import javax.imageio.IIOException;
 
 public class ReadClass {
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args){
 		//FileReader 
 		FileReader fileReader=null;
 		BufferedReader bufferedReader=null;

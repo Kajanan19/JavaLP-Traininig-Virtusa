@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 import javax.imageio.IIOException;
 
-public class ReadClass {
+public class Read {
 	
 	public static void main(String[] args){
 		//FileReader 

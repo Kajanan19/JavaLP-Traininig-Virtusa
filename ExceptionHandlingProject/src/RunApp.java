@@ -21,7 +21,7 @@ public class RunApp {
 		    try {
 		    	 price = sc.nextDouble();
 		    } catch (IllegalArgumentException e) {
-		        e.printStackTrace();
+		        System.out.println(e+"illegalArgumentException found");
 		    }
 		   
 		   //Add Discount 
@@ -34,7 +34,7 @@ public class RunApp {
 			    	throw new IllegalArgumentException("Discount exceeded!"); 
 			    }
 		    } catch (IllegalArgumentException e) {
-		        e.printStackTrace();
+		       System.out.println(e+"illegalArgumentException found");
 		    }
 		    
 		    //Print LastTotal
@@ -44,7 +44,7 @@ public class RunApp {
 		    	lastTotal=calculateTotalService.calculateTotal(price, discount);
 			} catch (Exception e) {
 				// TODO: handle exception
-				 e.printStackTrace();
+				System.out.println(e+"illegalArgumentException found");
 			}
 		    		
 		    System.out.println("Total Amount to pay: "+lastTotal);
@@ -56,7 +56,7 @@ public class RunApp {
 		    	addToBasket.addItemsDetailsToBasket(nameyString, price, discount, lastTotal);
 			} catch (Exception e) {
 				// TODO: handle exception
-				 e.printStackTrace();
+				System.out.println(e+"illegalArgumentException found");
 			}
 		    System.out.println("Items details Added to cart Successfully");
 		    

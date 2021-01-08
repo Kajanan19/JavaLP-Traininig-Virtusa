@@ -1,0 +1,26 @@
+spring:
+  application:
+   name: project
+  datasource:
+    url: jdbc:mysql://localhost:3306/project?createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  cloud:
+    config:
+      discovery:
+        enabled: true
+logging:
+  file: /logs/application-debug.log
+  level:
+    root: INFO
+  pattern:
+    file: "%d %-5level [%thread] %logger : %msg%n"
+server:
+  port: 8080
+ 
